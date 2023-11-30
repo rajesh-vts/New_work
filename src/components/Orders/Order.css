@@ -1,0 +1,20 @@
+/* Updated CSS */
+.order-list-container {
+  display: flex;
+  flex-direction: column; /* Stack items vertically */
+  align-items: center; /* Center horizontally */
+  padding-top: 20px; /* Add space at the top */
+}
+
+/* Add New button */
+.add-new-button {
+  margin-bottom: 20px; /* Add space between button and table */
+}
+
+/* Hover effect for edit and delete buttons */
+.btn-primary:hover,
+.btn-danger:hover {
+  /* Add your hover effect styles here */
+  opacity: 0.8;
+  /* Other styles */
+}

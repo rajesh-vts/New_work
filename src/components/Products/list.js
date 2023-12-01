@@ -1,19 +1,10 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { Table, Column } from 'react-virtualized';
 import 'react-virtualized/styles.css'; // Import react-virtualized styles
-import Action from './Action'; // Import the Action component
+// import Action from './Action'; // Import the Action component
 import './Product.css';
 
 const ProductList = () => {
-  const [showModal, setShowModal] = useState(false);
-
-  const openModal = () => {
-    setShowModal(true);
-  };
-
-  const closeModal = () => {
-    setShowModal(false);
-  };
 
   const products = [
     { id: 1, name: 'Product 1' },
@@ -30,31 +21,10 @@ const ProductList = () => {
 
   return (
     <React.Fragment>
-        <div className={`modal fade ${showModal ? 'show' : ''}`} id="categoryModal" tabIndex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-            <div className="modal-dialog modal-dialog-centered">
-            <div className="modal-content">
-                <div className="modal-header">
-                <h5 className="modal-title" id="exampleModalLabel">Add New Category</h5>
-                <button type="button" className="btn-close" onClick={closeModal} aria-label="Close"></button>
-                </div>
-                <div className="modal-body">
-                {/* Add your form or content for adding a new category */}
-                </div>
-                <div className="modal-footer">
-                <button type="button" className="btn btn-secondary" onClick={closeModal}>Close</button>
-                {/* Add Save button or any other action buttons */}
-                </div>
-            </div>
-            </div>
-        </div>
-
+        
       <div>
-        {/* Open the modal when the "Add New" button is clicked */}
-        <button onClick={openModal}>Add New</button>
+        <button >Add New</button>
       </div>
-
-      {/* Pass showModal and closeModal functions as props to the Action component */}
-      {showModal && <Action showModal={showModal} closeModal={closeModal} />}
 
       <div className="product-list-container">
         <Table

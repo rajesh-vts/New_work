@@ -6,6 +6,7 @@ const Sidebar = () => {
     const [isCategoryOpen, setCategoryOpen] = useState(false);
     const [isProductOpen, setProductOpen] = useState(false);
     const [isOrdersOpen, setOrderOpen] = useState(false);
+    const [isSettingsOpen, setSettingsOpen] = useState(false);
   
     const toggleCategory = () => {
       setCategoryOpen(!isCategoryOpen);
@@ -26,6 +27,12 @@ const Sidebar = () => {
             setOrderOpen(false);
           }
     }
+    const togglSettings = () =>{
+      setSettingsOpen(!isSettingsOpen);
+        if (isSettingsOpen) {
+          setSettingsOpen(false);
+          }
+    }
   
     return (
       <div className="sidebar">
@@ -34,7 +41,7 @@ const Sidebar = () => {
         </div>
         <ul className="menu-list">
           <li>
-            <Link to="/dashboard">Dashboard</Link>
+            <Link to="/admin/dashboard">Dashboard</Link>
           </li>
           <li onClick={toggleCategory}>
             Categories
@@ -49,7 +56,7 @@ const Sidebar = () => {
             Products
             {isProductOpen ? (
               <ul className="sub-menu">
-                <li><Link to="/products">Products</Link></li>
+                <li><Link to="/admin/products">Products</Link></li>
                 <li><Link to="/add-product">Add New Product</Link></li>
               </ul>
             ) : null}
@@ -61,6 +68,15 @@ const Sidebar = () => {
                 <li><Link to="/orders">Orders</Link></li>
                 <li><Link to="/pending-orders">Pending Orders</Link></li>
                 <li><Link to="/order-reviews">Order Reviews</Link></li>
+              </ul>
+            ) : null}
+          </li>
+          <li onClick={togglSettings}>
+            Settings
+            {isSettingsOpen ? (
+              <ul className="sub-menu">
+                <li><Link to="/global-settings">Global Settings</Link></li>
+                <li><Link to="/home-page">Home Page</Link></li>
               </ul>
             ) : null}
           </li>

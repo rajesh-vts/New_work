@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import { Table, Column } from 'react-virtualized';
-import 'react-virtualized/styles.css'; // Import react-virtualized styles
-import Action from './Action'; // Import the Action component
+import 'react-virtualized/styles.css';
 import './Category.css';
 
 const CategoryList = () => {

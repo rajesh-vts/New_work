@@ -8,9 +8,9 @@ import OrderList from '../components/Orders/list.js';
 function AdminRoutes() {
   return (
     <Routes>
-      <Route path="/admin/categories" element={<CategoryList />} />
-      <Route path="/admin/products" element={<ProductList />} />
-      <Route path="/admin/orders" element={<OrderList />} />
+      <Route path="/categories" element={<CategoryList />} />
+      <Route path="/products" element={<ProductList />} />
+      <Route path="/orders" element={<OrderList />} />
     </Routes>
   );
 }

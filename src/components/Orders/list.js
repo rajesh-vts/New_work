@@ -4,7 +4,7 @@ import 'react-virtualized/styles.css'; // Import react-virtualized styles
 import Action from './Action'; // Import the Action component
 import './Order.css';
 
-const OrderList = () => {
+const OrderList = () => { 
   const [showModal, setShowModal] = useState(false);
 
   const openModal = () => {

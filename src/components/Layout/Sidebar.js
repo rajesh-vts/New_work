@@ -65,7 +65,7 @@ const Sidebar = () => {
             Orders
             {isOrdersOpen ? (
               <ul className="sub-menu">
-                <li><Link to="/orders">Orders</Link></li>
+                <li><Link to="/admin/orders">Orders</Link></li>
                 <li><Link to="/pending-orders">Pending Orders</Link></li>
                 <li><Link to="/order-reviews">Order Reviews</Link></li>
               </ul>

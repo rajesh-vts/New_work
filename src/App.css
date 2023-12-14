@@ -1,5 +1,6 @@
 .App {
   text-align: center;
+  display: flex;
 }
 
 .App-logo {
@@ -48,10 +49,13 @@
 .sidebar {
   background-color: #333;
   color: white;
+  width: 250px;
   /* Add more sidebar styling */
 }
 
 /* Styles for the main content area */
 .main-content {
-  /* Add styling for the main content area */
+  flex: 1;
+  padding: 20px; /* Adjust spacing as needed */
+  /* Other main content styles */
 }

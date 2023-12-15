@@ -57,7 +57,7 @@ const Sidebar = () => {
             {isProductOpen ? (
               <ul className="sub-menu">
                 <li><Link to="/admin/products">Products</Link></li>
-                <li><Link to="/add-product">Add New Product</Link></li>
+                <li><Link to="/product/create-new">Add New Product</Link></li>
               </ul>
             ) : null}
           </li>

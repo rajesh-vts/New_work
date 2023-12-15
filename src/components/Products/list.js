@@ -2,6 +2,7 @@ import React from 'react';
 import { Table, Column } from 'react-virtualized';
 import 'react-virtualized/styles.css'; // Import react-virtualized styles
 // import Action from './Action'; // Import the Action component
+import { Link } from 'react-router-dom';
 import './Product.css';
 
 const ProductList = () => {
@@ -9,7 +10,6 @@ const ProductList = () => {
   const products = [
     { id: 1, name: 'Product 1' },
     { id: 2, name: 'Product 2' },
-    // Add more categories as needed
   ];
 
   const actionsCellRenderer = () => (
@@ -23,7 +23,7 @@ const ProductList = () => {
     <React.Fragment>
         
       <div>
-        <button >Add New</button>
+        <Link to="/product/create-new">Add New</Link>
       </div>
 
       <div className="product-list-container">

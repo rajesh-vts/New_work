@@ -2,10 +2,10 @@ import React, {useEffect} from 'react';
 
 const ProductAction = () => { 
 
-  useEffect(() => {
+  // useEffect(() => {
 
-    alert("sgds");  
-  }, []);
+  //   alert("sgds");  
+  // }, []);
 
   return (
     <div>yukyukyuk</div>

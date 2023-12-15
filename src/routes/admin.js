@@ -11,7 +11,7 @@ function AdminRoutes() {
     <Routes>
       <Route path="/categories" element={<CategoryList />} />
       <Route path="/products" element={<ProductList />} />
-      <Route path="/products/create-new" element={<ProductAction />} />
+      <Route path="/product/create-new" element={<ProductAction />} />
       <Route path="/orders" element={<OrderList />} />
     </Routes>
   );

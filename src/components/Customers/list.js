@@ -5,8 +5,8 @@ import { Link } from 'react-router-dom';
 
 const CustomerList = () =>{
     const categories = [
-        { id: 1, name: 'Category 1' },
-        { id: 2, name: 'Category 2' },
+        { id: 1, name: 'Customer 1' },
+        { id: 2, name: 'Customer 2' },
        
       ];
     

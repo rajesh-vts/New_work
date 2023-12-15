@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { Table, Column } from 'react-virtualized';
 import 'react-virtualized/styles.css';
 import './Category.css';
+import { Link } from 'react-router-dom';
 
 const CategoryList = () => {
   
@@ -21,8 +22,8 @@ const CategoryList = () => {
 
   return (
     <React.Fragment>
-      <div>
-        <button >Add New</button>
+       <div>
+        <Link to="/admin/category/create-new">Add New</Link>
       </div>
 
       <div className="category-list-container">

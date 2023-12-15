@@ -6,6 +6,7 @@ const Sidebar = () => {
     const [isCategoryOpen, setCategoryOpen] = useState(false);
     const [isProductOpen, setProductOpen] = useState(false);
     const [isOrdersOpen, setOrderOpen] = useState(false);
+    const [isCustomerOpen, setCustomerOpen] = useState(false);
     const [isSettingsOpen, setSettingsOpen] = useState(false);
   
     const toggleCategory = () => {
@@ -25,6 +26,12 @@ const Sidebar = () => {
         setOrderOpen(!isOrdersOpen);
         if (isOrdersOpen) {
             setOrderOpen(false);
+          }
+    }
+    const toggleCustomer = () =>{
+      setCustomerOpen(!isCustomerOpen);
+        if (isCustomerOpen) {
+          setCustomerOpen(false);
           }
     }
     const togglSettings = () =>{
@@ -47,8 +54,8 @@ const Sidebar = () => {
             Categories
             {isCategoryOpen ? (
               <ul className="sub-menu">
-                <li><Link to="/categories">Categories</Link></li>
-                <li><Link to="/add-new-category">Add New Category</Link></li>
+                <li><Link to="/admin/categories">Categories</Link></li>
+                <li><Link to="/admin/category/create-new">Add New Category</Link></li>
               </ul>
             ) : null}
           </li>
@@ -57,7 +64,7 @@ const Sidebar = () => {
             {isProductOpen ? (
               <ul className="sub-menu">
                 <li><Link to="/admin/products">Products</Link></li>
-                <li><Link to="/product/create-new">Add New Product</Link></li>
+                <li><Link to="/admin/product/create-new">Add New Product</Link></li>
               </ul>
             ) : null}
           </li>
@@ -68,6 +75,15 @@ const Sidebar = () => {
                 <li><Link to="/admin/orders">Orders</Link></li>
                 <li><Link to="/pending-orders">Pending Orders</Link></li>
                 <li><Link to="/order-reviews">Order Reviews</Link></li>
+              </ul>
+            ) : null}
+          </li>
+          <li onClick={toggleCustomer}>
+            Customers
+            {isCustomerOpen ? (
+              <ul className="sub-menu">
+                <li><Link to="/admin/customers">Customers</Link></li>
+                <li><Link to="/admin/create-customers">Create Customer</Link></li>
               </ul>
             ) : null}
           </li>

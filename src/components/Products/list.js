@@ -23,7 +23,7 @@ const ProductList = () => {
     <React.Fragment>
         
       <div>
-        <Link to="/product/create-new">Add New</Link>
+        <Link to="/admin/product/create-new">Add New</Link>
       </div>
 
       <div className="product-list-container">

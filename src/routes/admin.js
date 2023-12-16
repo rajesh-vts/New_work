@@ -8,6 +8,7 @@ import ProductAction from '../components/Products/Action.js';
 import OrderList from '../components/Orders/list.js';
 import CustomerList from '../components/Customers/list.js';
 import CustomerAction from '../components/Customers/Action.js';
+import CustomersData from '../components/Customers/customerData.js';
 
 function AdminRoutes() {
   return (
@@ -19,6 +20,7 @@ function AdminRoutes() {
       <Route path="/orders" element={<OrderList />} />
       <Route path="/customers" element={<CustomerList />} />
       <Route path="/create-customers" element={<CustomerAction />} />
+      <Route path="/customers-data" element={<CustomersData />} />
     </Routes>
   );
 }

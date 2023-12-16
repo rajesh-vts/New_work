@@ -84,6 +84,7 @@ const Sidebar = () => {
               <ul className="sub-menu">
                 <li><Link to="/admin/customers">Customers</Link></li>
                 <li><Link to="/admin/create-customers">Create Customer</Link></li>
+                <li><Link to="/admin/customers-data">Customers Data</Link></li>
               </ul>
             ) : null}
           </li>

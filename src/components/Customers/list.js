@@ -19,7 +19,7 @@ const CustomerList = () =>{
     return (
         <React.Fragment>
             <div>
-                <Link to="/admin/category/create-new">Add New</Link>
+                <Link to="/admin/create-customers">Add New</Link>
             </div>
     
         <div className="category-list-container">

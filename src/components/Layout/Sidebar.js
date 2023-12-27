@@ -85,6 +85,7 @@ const Sidebar = () => {
                 <li><Link to="/admin/customers">Customers</Link></li>
                 <li><Link to="/admin/create-customers">Create Customer</Link></li>
                 <li><Link to="/admin/customers-data">Customers Data</Link></li>
+                <li><Link to="/admin/customers-cart">Customers Cart</Link></li>
               </ul>
             ) : null}
           </li>
@@ -92,7 +93,7 @@ const Sidebar = () => {
             Settings
             {isSettingsOpen ? (
               <ul className="sub-menu">
-                <li><Link to="/global-settings">Global Settings</Link></li>
+                <li><Link to="/admin/global-settings">Global Settings</Link></li>
                 <li><Link to="/home-page">Home Page</Link></li>
               </ul>
             ) : null}

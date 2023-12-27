@@ -5,6 +5,7 @@ function CustomerRoutes() {
   return (
     <Routes>
       <Route path="/" element={<Home />} />
+      {/* <Route path="/product/" element={<CategoryAction />} /> */}
     </Routes>
   );
 }

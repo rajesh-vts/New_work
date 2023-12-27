@@ -6,7 +6,8 @@ function CustomerRoutes() {
   return (
     <Routes>
       <Route path="/" element={<Home />} />
-      <Route path="/products/:category_slug" element={<ProductListView />} />
+      <Route path="category/products/:category_slug" element={<ProductListView />} />
+      <Route path="products/:product_slug" element={<ProductListView />} />
     </Routes>
   );
 }

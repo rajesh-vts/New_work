@@ -1,7 +1,6 @@
-// ProductListView.js
 import React from 'react';
-import productList from './api'; // Assuming this imports your product list data
-import './main.css'; // Import your CSS file here
+import productList from './api'; 
+import './main.css'; 
 
 const ProductListView = () => {
   return (

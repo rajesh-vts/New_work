@@ -2,6 +2,7 @@ import React from 'react';
 import productList from './api'; 
 import './main.css'; 
 
+
 const ProductListView = () => {
   return (
     <div className="product-list-page">
